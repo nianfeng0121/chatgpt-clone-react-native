@@ -23,9 +23,9 @@ const ChatPage = () => {
   const db = useSQLiteContext();
   let { id } = useLocalSearchParams<{ id: string }>();
 
-  if (!key || key === '' || !organization || organization === '') {
-    return <Redirect href={'/(auth)/(modal)/settings'} />;
-  }
+  // if (!key || key === '' || !organization || organization === '') {
+  //   return <Redirect href={'/(auth)/(modal)/settings'} />;
+  // }
 
   const [chatId, _setChatId] = useState(id);
   const chatIdRef = useRef(chatId);
